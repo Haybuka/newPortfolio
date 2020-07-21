@@ -260,3 +260,47 @@ main .gallery {
 a.green-color {
     color: #33AA09;
 }
+
+footer {
+    /* font-family: Gotham Pro; */
+    background-color: #222325;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3 {
+    font-weight: bold;
+    /* font-size: 36px; */
+    line-height: 34px;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#name {
+    padding-left: 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #222325;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+}
+
+#email {
+    padding-left: 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: #222325;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+}
