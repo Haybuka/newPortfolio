@@ -69,6 +69,32 @@ nav a {
     font-size: 14px;
 }
 
+nav .nav-elements ul li {
+    position: relative;
+}
+
+nav .nav-elements ul li a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+nav .nav-elements ul li a:after {
+    content: '';
+    width: 0;
+    height: 0.2em;
+    background-color: #33AA09;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 300ms ease-in-out;
+
+}
+
+nav .nav-elements ul li a:hover:after {
+    width: 100%;
+
+}
+
 nav a.current {
     color: #33AA09;
 }
@@ -175,20 +201,6 @@ main .gallery {
     position: relative;
 
 }
-
-/* .gallery a:hover:after {
-    content: '+';
-    position: absolute;
-    top: 38%;
-    left: 25.3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: rgba(34, 35, 37, 0.644);
-    width: 548px;
-    height: 290px;
-} */
 
 .gallery .rowOne {
     grid-row: 1/2;
