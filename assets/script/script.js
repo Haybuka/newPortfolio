@@ -1,5 +1,6 @@
 let burgerNav = document.querySelector(".harmburger");
 let nav = document.querySelector("nav");
+let li = nav.querySelector('li');
 let drop = nav.querySelectorAll('ul');
 const lineOne = burgerNav.querySelector('.line-one');
 const lineTwo = burgerNav.querySelector('.line-two');
@@ -30,45 +31,60 @@ $(document).ready(function () {
 	});
 });
 
-// gsap.from('.square', {
-// 	y: 'random(-500,200)',
-// 	x: 'random(-300,500)',
-// 	duration: 2,
-// 	stagger: 1.5,
-// 	opacity: 0,
-// 	backgroundColor: 'yellow'
-// });
-// var tlm = gsap.timeline(
-// 	{
-// 		// repeat: 2,
-// 		// yoyo: true
-// 	}
-// );
-// tlm.from('.box', {
-// 	y: 'random(-500,500)',
-// 	x: 'random(-500,500)',
-// 	duration: 3,
-// 	stagger: 1,
-// 	rotation: '+=265',
-// 	transformOrigin: '50% 50%',
-// 	opacity: 0,
-// 	ease: 'elastic',
-// 	backgroundColor: 'red'
-// });
+var tlm = gsap.timeline({
 
-// // burger.addEventListener("click", function () {
-// //     this.classList.add('js-x')
-// //     let tl = gsap.timeline({})
-// //     tl.to(lineTwo, {
-// //         x: -100,
-// //         duration: 1
-// //     })
-// // })
-var lines = [lineOne, lineThree, lineTwo]
-var tl = gsap.timeline({
-	repeat: 1,
-	yoyo: true
 });
+tlm
+	.from('.logo h3', {
+		y: -200,
+		duration: 0.5,
+		transformOrigin: '50% 50%',
+		opacity: 0,
+		ease: Power1.easeInOut,
+	})
+	.from('nav ul li', {
+		scaleX: 5,
+		duration: 0.5,
+		stagger: 0.5,
+		ease: Power1.easeInOut,
+		opacity: 0
+	});
+var tls = gsap.timeline({});
+tls.from('.welcome', {
+	y: -200,
+	duration: 0.8,
+	delay: 0.5,
+	stagger: 0.5,
+	transformOrigin: '50% 50%',
+	opacity: 0,
+	ease: Power1.easeInOut,
+}).from('.digital', {
+	scaleY: -2,
+	duration: 0.8,
+	stagger: 0.5,
+	transformOrigin: '50% 50%',
+	opacity: 0,
+	ease: Power1.easeInOut,
+}).from('.arrowDown', {
+	y: "-=30",
+	duration: 0.8,
+	stagger: 0.5,
+	transformOrigin: '50% 50%',
+	opacity: 0,
+	ease: Power1.easeInOut,
+	yoyo: true,
+	repeat: 4
+});
+
+var tl = gsap.timeline({});
+tl.from('#about', 1.5, {
+	opacity: 0,
+	stagger: 1,
+	y: '-=50',
+	ease: 'bounce'
+})
+// var lines = [lineOne, lineThree, lineTwo]
+
 // burgerNav.addEventListener('mouseover', () => {
 // 	tl
 // 		.to(lines, 0.25, {

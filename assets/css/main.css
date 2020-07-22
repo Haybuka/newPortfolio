@@ -139,6 +139,11 @@ header .hero {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+}
+
+#home {
+    margin-top: 10%;
 }
 
 .hero .welcome {
@@ -149,6 +154,7 @@ header .hero {
     line-height: 78px;
     color: #fff;
     margin: 30px;
+    text-align: center;
 }
 
 #gringo {
@@ -182,6 +188,11 @@ main .bio-text {
     background-color: #33AA09;
     display: flex;
     align-items: center;
+}
+
+main .bio-texts,
+main .bio-img {
+    display: none;
 }
 
 main .card-title {
@@ -435,18 +446,11 @@ footer #submit {
     nav ul.hide {
         display: none;
     }
-
-    /* nav .nav-links .hide {
-        display: none;
-        height: 0;
-        width: 0;
-        overflow: hidden;
-    } */
 }
 
 @media screen and (max-width:400px) {
     .row .card-body {
-        padding: 30px;
+        padding: 40px 20px;
     }
 
     .gallery .gal-one {
@@ -502,8 +506,11 @@ footer #submit {
 
 }
 
-@media screen and (max-width:600px) {
 
+@media screen and (max-width:600px) {
+    #about .row {
+        display: none;
+    }
 
     .dark-text {
 
@@ -512,8 +519,8 @@ footer #submit {
     }
 
     footer p {
-        font-size: 15px;
-        line-height: 14px;
+        font-size: 17px;
+        line-height: 18px;
         font-weight: 300;
     }
 
@@ -536,8 +543,8 @@ footer #submit {
     }
 
     main .card-text {
-        font-size: 14px;
-        line-height: 13px;
+        font-size: 16px;
+        line-height: 15px;
     }
 
     header .hero {
@@ -574,7 +581,13 @@ footer #submit {
     }
 
     .arrowDown {
-        display: none;
+
+        margin-bottom: -5em;
+        margin-top: 4em;
+        width: 50px;
+
+        left: 40%;
+        position: relative;
     }
 
     .details {
@@ -622,5 +635,34 @@ footer #submit {
         width: 100%;
     }
 
+    main .bio-texts {
+        background-color: #33AA09;
+        width: 60.5%;
+        margin: 0 auto;
+        display: block;
+        padding: 25px 15px;
+    }
+
+    main .bio-text {
+        display: none;
+    }
+
+    main .bio-texts p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 18px;
+
+    }
+
+    main .bio-texts h5 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        margin: 5% auto;
+    }
+
+    main .bio-img {
+        display: block;
+    }
 
 }
