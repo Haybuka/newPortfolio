@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
      <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
                     <h3>Gringo</h3>
                 </div>
                 <div class="nav-elements">
-                    <ul>
+                    <ul class="hide">
                         <li><a href="#" class="current">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="#">GALLERY</a></li>
@@ -28,7 +28,7 @@
                     </ul>
                 </div>
                 <div class="nav-links">
-                            <ul>
+                            <ul class="hide">
                                 <li><a href="#"><img src="assets/image/ins.svg" alt=""></a></li>
                                 <li><a href="#"><img src="assets/image/twt.svg" alt=""></a></li>
                                 <li><a href="#"><img src="assets/image/fb.svg" alt=""></a></li>
@@ -36,9 +36,9 @@
                 </div>
                 <div class="harmburger">
                     <svg class="burgerLines">
-                        <line class="line-one" x1="15" y1="5" x2="50" y2="5" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
-                        <line class="line-two" x1="15" y1="15" x2="50" y2="15" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
-                        <line class="line-three" x1="15" y1="25" x2="50" y2="25" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+                        <line class="line-one" x1="15" y1="5" x2="50" y2="5" fill="none" stroke="#33AA09" stroke-miterlimit="10" stroke-width="4"/>
+                        <line class="line-two" x1="15" y1="15" x2="50" y2="15" fill="none" stroke="#33AA09" stroke-miterlimit="10" stroke-width="4"/>
+                        <line class="line-three" x1="15" y1="25" x2="50" y2="25" fill="none" stroke="#33AA09" stroke-miterlimit="10" stroke-width="4"/>
                   </svg>
                 </div>
             </nav>
@@ -47,20 +47,21 @@
                 <h2 class="welcome">Hello,Welcome To <span id="gringo">Gringo</span></h2>
                 <span class="digital">Digital Photo Studios</span>
                 <div class="arrowDown">
-                    <img src="assets/image/appbar.chevron 1.svg" alt="">
+                    <img src="assets/image/appbar.chevron 1.svg" alt="" class="img-fluid">
                   </div>
               </div>
             </div>
+            
            
         </header>
         <main class="container">
             <section class="card my-5">
                     <div class="row no-gutters">
-                      <div class="col-md-6">
+                      <div class="col-lg-6 col-xl-6 col-md-12">
                         <img src="assets/image/vectorA.jpg" class="card-img" alt="...">
                       </div>
-                      <div class="col-md-6 bio-text">
-                        <div class="card-body p-5">
+                      <div class="col-lg-6 col-xl-6 col-md-12 bio-text">
+                        <div class="card-body">
                           <h5 class="card-title">My Name is John Doe</h5>
                           <p class="card-text">
                             My style is a combination between photojournalism and fine-art photography with a touch of fashion and creative lighting. 
@@ -88,35 +89,35 @@
                     <li><a href="#">NATURE</a></li>
                 </ul>
                </div>
-               <div class="gal-one">
-                <img src="assets/image/grid-image/one.png" alt="">
-               </div>
-               <div class="gal-two">
-                <img src="assets/image/grid-image/two.png" alt="" >
-               </div>
-               <div class="gal-three">
-                   <img src="assets/image/grid-image/three.png" alt="" >
-               </div>
-               <div  class="gal-four">
-                <img src="assets/image/grid-image/four.png" alt=""> 
-               </div>
-               <div class="gal-five">
-                <img src="assets/image/grid-image/five.png" alt="" >
-               </div>
-               <div  class="gal-six">
-                <img src="assets/image/grid-image/six.png" alt="">
-               </div>
-               <div  class="gal-seven">
-                <img src="assets/image/grid-image/seven.png" alt="">
-               </div>
-               <div class="gal-eight">
-                <img src="assets/image/grid-image/eight.png" alt="">
-               </div>
-               <div  class="gal-nine">
-                <img src="assets/image/grid-image/nine.png" alt="">
-               </div>
-              </section>
-              <section class="details my-5">
+               <a href="assets/image/grid-image/one.png" class="gal-one">
+                 <img src="assets/image/grid-image/one.png" alt="">
+               </a>
+               <a href="assets/image/grid-image/two.png" class="gal-two">
+                 <img src="assets/image/grid-image/two.png" alt="">
+               </a>
+               <a href="assets/image/grid-image/three.png"  class="gal-three">
+                 <img src="assets/image/grid-image/three.png" alt="" class="img">
+               </a>
+              <a href="assets/image/grid-image/four.png" class="gal-four">
+                <img src="assets/image/grid-image/four.png" alt="" class="img"> 
+              </a>
+              <a href="assets/image/grid-image/five.png" class="gal-five">
+                <img src="assets/image/grid-image/five.png" alt="" class="img">
+              </a>
+              <a href="assets/image/grid-image/six.png" class="gal-six">
+                <img src="assets/image/grid-image/six.png" alt="" >
+              </a>
+             <a href="assets/image/grid-image/seven.png" class="gal-seven">
+              <img src="assets/image/grid-image/seven.png" alt="" >
+             </a>
+             <a href="assets/image/grid-image/eight.png" class="gal-eight">
+              <img src="assets/image/grid-image/eight.png" alt="" >
+             </a>
+            <a href="assets/image/grid-image/nine.png" class="gal-nine">
+              <img src="assets/image/grid-image/nine.png" alt="" >
+            </a>
+      </section>
+              <section class="details my-5 mb-5">
                 <aside class="text-center">
                     <img src="assets/image/article-image/camera.svg" alt="">
                     <br />
@@ -144,7 +145,7 @@
               </section>
         </main>
         <footer class="">
-            <article class="container ">
+            <article class="container pt-3">
                 <section class="text-center p-3 my-3">
                     <div>
                       <h3 class="text-white">Get In Touch</h3>
@@ -210,12 +211,17 @@
             </article>
         </footer>
     </div>
-    <!-- JS, Popper.js, and jQuery -->
-<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- Magnific Popup core JS file -->
+
+
+<!-- JS, Popper.js, and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="assets/script/jquery.magnific-popup.js"></script>
+ <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
-<!-- 
-<script src="script/gsap.min.js"></script>
-<script src="assets/script/script.js"></script> -->
+
+<script src="assets/script/gsap.min.js"></script> 
+<script src="assets/script/script.js"></script> 
 </body>
 </html>
