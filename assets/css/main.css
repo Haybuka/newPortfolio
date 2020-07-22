@@ -85,13 +85,13 @@ nav .nav-elements ul li a:after {
     background-color: #33AA09;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     transition: 300ms ease-in-out;
 
 }
 
 nav .nav-elements ul li a:hover:after {
-    width: 100%;
+    width: 70%;
 
 }
 
@@ -496,13 +496,33 @@ footer #submit {
         margin-right: 10px;
         list-style-type: none;
     }
+
 }
 
 @media screen and (max-width:600px) {
+
+
     .dark-text {
 
         font-size: 24px;
         line-height: 23px;
+    }
+
+    footer p {
+        font-size: 15px;
+        line-height: 14px;
+        font-weight: 300;
+    }
+
+    footer h3,
+    footer h4,
+    footer span {
+        font-size: 24px;
+        line-height: 23px;
+    }
+
+    footer span {
+        font-weight: 300;
     }
 
     main .card-title {
@@ -572,7 +592,7 @@ footer #submit {
 
     .contact aside {
         margin-top: 1em !important;
-        margin-bottom: 1em !important;
+        margin-bottom: 3em !important;
     }
 
     footer form {
