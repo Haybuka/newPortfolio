@@ -445,6 +445,9 @@ footer #submit {
 }
 
 @media screen and (max-width:400px) {
+    .row .card-body {
+        padding: 30px;
+    }
 
     .gallery .gal-one {
         grid-row: 2/3;
