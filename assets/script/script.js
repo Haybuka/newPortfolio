@@ -98,8 +98,8 @@ var tll = gsap.timeline({});
 tll.from(totalGrid, {
 	y: 'random(500,-300)',
 	x: 'random(300,-500)',
-	duration: 10,
-	delay: 3,
+	duration: 5,
+	delay: 2,
 	stagger: 0.25,
 	transformOrigin: '50% 50%',
 	opacity: 0,
