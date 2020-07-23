@@ -82,27 +82,54 @@ tl.from('#about', 1.5, {
 	stagger: 1,
 	y: '-=50',
 	ease: 'bounce'
-})
-// var lines = [lineOne, lineThree, lineTwo]
+});
 
-// burgerNav.addEventListener('mouseover', () => {
-// 	tl
-// 		.to(lines, 0.25, {
-// 			scaleX: 0.5,
-// 			stagger: 1
-// 		})
-// 		.to(lines, 0.25, {
-// 			scaleX: 3,
-// 			stagger: 1
-// 		})
-// 		.to(lines, 0.25, {
-// 			scaleX: 0,
-// 			stagger: 1
-// 		});
-// });
+const firstGrid = ['.gal-one', '.gal-six', '.gal-three', '.gal-four'];
+const secondGrid = ['.gal-five', '.gal-two', '.gal-seven', '.gal-eight', '.gal-nine']
+var tll = gsap.timeline({});
+tll.from(firstGrid, {
+	y: 'random(300,-300)',
+	duration: 0.8,
+	delay: 0.5,
+	stagger: 0.5,
+	transformOrigin: '50% 50%',
+	opacity: 0,
+	ease: Power1.easeInOut
+}).from(secondGrid, {
+	x: 'random(300,-300)',
+	duration: 0.8,
+	delay: 0.5,
+	stagger: 0.5,
+	transformOrigin: '50% 50%',
+	opacity: 0,
+	ease: Power1.easeInOut
+});
 
-// gsap.to('.first,.second,.third', 2, {
-// 	y: '-3000',
-// 	stagger: 1,
-// 	delay: 1.5
-// });
+let proxy = {
+		skew: 0
+	},
+	skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+	clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees. 
+
+ScrollTrigger.create({
+	onUpdate: (self) => {
+		let skew = clamp(self.getVelocity() / -300);
+		// only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+		if (Math.abs(skew) > Math.abs(proxy.skew)) {
+			proxy.skew = skew;
+			gsap.to(proxy, {
+				skew: 0,
+				duration: 0.8,
+				ease: "power3",
+				overwrite: true,
+				onUpdate: () => skewSetter(proxy.skew)
+			});
+		}
+	}
+});
+
+// make the right edge "stick" to the scroll bar. force3D: true improves performance
+gsap.set(".skewElem", {
+	transformOrigin: "right center",
+	force3D: true
+});
