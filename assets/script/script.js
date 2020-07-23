@@ -106,7 +106,7 @@ tll.from(totalGrid, {
 	ease: Power2.easeInOut,
 	scrollTrigger: {
 		trigger: '.gallery',
-		start: 'top 260',
+		start: 'top 240',
 		end: '400 200',
 		scrub: true,
 		id: 'scrub',
