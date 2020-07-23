@@ -107,7 +107,7 @@ tll.from(totalGrid, {
 	scrollTrigger: {
 		trigger: '.gallery',
 		start: 'top 300',
-		end: '500 200',
+		end: '400 200',
 		scrub: true,
 		id: 'scrub',
 		reverse: true
