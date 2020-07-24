@@ -402,6 +402,7 @@ footer #submit {
     background-color: #33AA09;
     border: none;
     padding: 10px 25px;
+    margin-top: 3%;
 }
 
 
@@ -472,6 +473,37 @@ footer .container-fluid {
     nav ul.hide {
         display: none;
     }
+
+    nav .harmburger span {
+        width: 30px;
+        display: block;
+        height: 3px;
+        margin-left: 10px;
+        margin-top: 3px;
+        background-color: #33AA09;
+        transition: all 0.5s;
+        border-radius: 10px;
+        transform-origin: 50% 50%;
+    }
+
+    nav .harmburger span:nth-child(2).drop {
+        background-color: transparent;
+    }
+
+    nav .harmburger span:nth-child(1).cross {
+        transform: rotate(50deg);
+        position: relative;
+        top: 5px;
+        transform-origin: 18px;
+    }
+
+    nav .harmburger span:nth-child(3).revCross {
+        transform: rotate(-50deg);
+        position: relative;
+        top: -10px;
+        transform-origin: 'top left';
+        transform-origin: 50% 50%;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -534,6 +566,8 @@ footer .container-fluid {
 
 
 @media screen and (max-width:600px) {
+
+
     #about .row {
         display: none;
     }

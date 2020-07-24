@@ -5,20 +5,26 @@ let drop = nav.querySelectorAll('ul');
 const lineOne = burgerNav.querySelector('.line-one');
 const lineTwo = burgerNav.querySelector('.line-two');
 const lineThree = burgerNav.querySelector('.line-three');
+const midSpan = document.querySelector('nav .harmburger span:nth-child(2)')
+const firstSpan = document.querySelector('nav .harmburger span:nth-child(1)')
+const thirdSpan = document.querySelector('nav .harmburger span:nth-child(3)')
 
 // add an event listener to toggle the class
-burgerNav.addEventListener('click', function() {
+burgerNav.addEventListener('click', function () {
 	//toggle height and nav to 100vh
 	drop.forEach((n) => {
 		n.classList.toggle('hide');
 	});
 	//end of toggler
+	midSpan.classList.toggle('drop')
+	firstSpan.classList.toggle('cross')
+	thirdSpan.classList.toggle('revCross')
 	nav.style.height = 'auto';
 	//start of gsap
 });
 
 //Image Gallery Popups
-$(document).ready(function() {
+$(document).ready(function () {
 	$('.gallery').magnificPopup({
 		delegate: 'a', // child items selector, by clicking on it popup will open
 		type: 'image',
