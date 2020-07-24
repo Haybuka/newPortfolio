@@ -8,22 +8,6 @@ body {
     padding: 0;
 }
 
-@media screen and (max-width:1500px) {
-    #wrapper {
-        overflow-x: hidden;
-        max-width: 100%;
-        width: 1500px !important;
-    }
-}
-
-@media screen and (max-width:2000px) {
-    #wrapper {
-        overflow-x: hidden;
-        max-width: 100% !important;
-        width: 2000px !important;
-    }
-}
-
 #wrapper {
     width: 1440px;
     max-width: 100%;
@@ -45,6 +29,7 @@ nav {
     left: 0;
     background-color: #fff;
     z-index: 10;
+    width: 100%;
 }
 
 nav .logo {
@@ -423,6 +408,22 @@ footer #submit {
 footer .container-fluid {
     padding-right: 35px !important;
     padding-left: 35px !important;
+}
+
+@media screen and (max-width:1500px) {
+    #wrapper {
+        overflow-x: hidden;
+        max-width: 100%;
+        width: 1500px !important;
+    }
+}
+
+@media screen and (max-width:2000px) {
+    #wrapper {
+        overflow-x: hidden;
+        max-width: 100% !important;
+        width: 2000px !important;
+    }
 }
 
 @media screen and (max-width:1050px) {
