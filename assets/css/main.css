@@ -8,12 +8,26 @@ body {
     padding: 0;
 }
 
+@media screen and (max-width:1500px) {
+    #wrapper {
+        overflow-x: hidden;
+        max-width: 100%;
+        width: 1500px !important;
+    }
+}
+
+@media screen and (max-width:2000px) {
+    #wrapper {
+        overflow-x: hidden;
+        max-width: 100% !important;
+        width: 2000px !important;
+    }
+}
+
 #wrapper {
-    /* width: 1440px;
-    max-width: 100%; */
-    overflow-x: hidden;
+    width: 1440px;
     max-width: 100%;
-    width: 1500px;
+    overflow-x: hidden;
 }
 
 header {
@@ -406,6 +420,10 @@ footer #submit {
 }
 
 
+footer .container-fluid {
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+}
 
 @media screen and (max-width:1050px) {
     nav {
