@@ -8,6 +8,7 @@ const lineThree = burgerNav.querySelector('.line-three');
 const midSpan = document.querySelector('nav .harmburger span:nth-child(2)')
 const firstSpan = document.querySelector('nav .harmburger span:nth-child(1)')
 const thirdSpan = document.querySelector('nav .harmburger span:nth-child(3)')
+const peace = document.querySelector('.fa-hand-peace')
 
 // add an event listener to toggle the class
 burgerNav.addEventListener('click', function () {
@@ -120,6 +121,7 @@ tll.from(totalGrid, {
 		marker: true
 	}
 });
+
 
 // let proxy = {
 // 		skew: 0
