@@ -6,6 +6,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
+	color: #343a40;
 }
 
 html {
@@ -23,7 +24,9 @@ header {
 	padding: 0;
 	/* clip-path: polygon(0 0, 100% 0, 100% 70vh, 100% 70vh, 0 100%); */
 }
-
+.fa-share {
+	color: #33aa09;
+}
 nav {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -266,7 +269,6 @@ main .gallery {
 	grid-column: 1/7;
 }
 
-
 .gallery .gal-nine {
 	grid-row: 4/5;
 	grid-column: 7/10;
@@ -293,19 +295,14 @@ main .gallery {
 
 .rowOne a {
 	text-decoration: none;
-	color: #000;
+	color: #343a40;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 17px;
 }
-
-/* .details {
-	height: 300px;
-	background-color: #33aa09;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-} */
+#projects {
+	display: none;
+}
 .details {
 	height: 300px;
 	padding-top: 1%;
@@ -334,7 +331,6 @@ main .gallery {
 }
 
 .dark-text {
-	color: black;
 	font-weight: bold;
 }
 
@@ -592,7 +588,6 @@ footer .container-fluid {
 		background-color: #33aa09;
 		display: block;
 		padding: 2em !important;
-
 	}
 
 	.details #divFirst {
@@ -617,7 +612,6 @@ footer .container-fluid {
 		margin-top: 1em !important;
 		margin-bottom: 3em !important;
 	}
-
 }
 
 @media screen and (max-width: 600px) {
