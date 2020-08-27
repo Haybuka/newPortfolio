@@ -149,3 +149,8 @@ tll.from(totalGrid, {
 // 	transformOrigin: 'right center',
 // 	force3D: true
 // });
+
+window.addEventListener("load", function () {
+	const preloader = document.querySelector(".preloader");
+	preloader.className += " hidden";
+});
