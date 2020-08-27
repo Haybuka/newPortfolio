@@ -760,7 +760,8 @@ footer .container-fluid {
 	background-size: cover;
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
-	font-size: 30vh;
+	font-size: 20px;
+	text-transform: uppercase;
 	z-index: 1099;
 
 }
