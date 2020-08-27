@@ -7,6 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #343a40;
+	background-color: #fff !important;
 }
 
 html {
@@ -24,9 +25,11 @@ header {
 	padding: 0;
 	/* clip-path: polygon(0 0, 100% 0, 100% 70vh, 100% 70vh, 0 100%); */
 }
+
 .fa-share {
 	color: #33aa09;
 }
+
 nav {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -129,7 +132,11 @@ nav li {
 
 .nav-links li {
 	margin-left: 5px;
-	margin-right: 5px;
+	margin-right: 10px;
+}
+
+.nav-links i {
+	font-size: 20px;
 }
 
 nav .harmburger {
@@ -234,6 +241,11 @@ main .gallery {
 	grid-column: 1/13;
 }
 
+.gallery img:hover {
+	transform: translate(5px, -5px);
+	box-shadow: 0 3px 5px rgba(26, 24, 24, 0.479);
+}
+
 .gallery .gal-one {
 	grid-row: 2/4;
 	grid-column: 1/4;
@@ -300,9 +312,11 @@ main .gallery {
 	font-size: 14px;
 	line-height: 17px;
 }
+
 #projects {
 	display: none;
 }
+
 .details {
 	height: 300px;
 	padding-top: 1%;
@@ -412,7 +426,57 @@ footer #messages {
 	width: 100%;
 }
 
-footer #submit {
+.btn::after {
+	content: " ";
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all 0.4s;
+}
+
+.btn-white::after {
+	background-color: #33aa09;
+
+}
+
+.btn:hover::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+
+.btn:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 40px;
+	display: inline-block;
+	border-radius: 100px;
+	transition: all 0.2s;
+	position: relative;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+	transform: translateY(-1px);
+}
+
+.btn-white {
+	background-color: #33aa09;
+	color: #fff;
+	padding: 10px 25px;
+	border-radius: 10px;
+}
+
+/* footer #submit {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -423,7 +487,7 @@ footer #submit {
 	border: none;
 	padding: 10px 25px;
 	margin-top: 3%;
-}
+} */
 
 footer .container-fluid {
 	padding-right: 35px !important;
