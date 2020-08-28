@@ -647,6 +647,41 @@ footer .container-fluid {
 	}
 }
 
+@media screen and (max-width:800px) {
+	footer .contact {
+		display: block;
+	}
+
+	.contact aside {
+		margin-top: 1em !important;
+		margin-bottom: 3em !important;
+	}
+
+	footer form {
+		width: 100%;
+	}
+
+	footer .fields {
+		display: block;
+	}
+
+	footer #name {
+		display: block;
+		width: 100%;
+	}
+
+	footer #email {
+		display: block;
+		width: 100%;
+	}
+
+	footer #messages {
+		display: block;
+		width: 100%;
+	}
+
+}
+
 @media screen and (max-width: 650px) {
 	.details {
 		height: auto;
@@ -760,37 +795,6 @@ footer .container-fluid {
 		position: relative;
 	}
 
-	footer .contact {
-		display: block;
-	}
-
-	.contact aside {
-		margin-top: 1em !important;
-		margin-bottom: 3em !important;
-	}
-
-	footer form {
-		width: 100%;
-	}
-
-	footer .fields {
-		display: block;
-	}
-
-	footer #name {
-		display: block;
-		width: 100%;
-	}
-
-	footer #email {
-		display: block;
-		width: 100%;
-	}
-
-	footer #messages {
-		display: block;
-		width: 100%;
-	}
 
 	main .bio-texts {
 		display: block;
