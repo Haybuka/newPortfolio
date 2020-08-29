@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	color: #343a40;
 	background-color: #fff !important;
+	font-family: 'Lobster', cursive;
 }
 
 html {
@@ -19,11 +20,20 @@ html {
 	max-width: 100%;
 	overflow-x: hidden;
 }
-
+.bio-text {
+}
 header {
 	margin: 0;
 	padding: 0;
 	/* clip-path: polygon(0 0, 100% 0, 100% 70vh, 100% 70vh, 0 100%); */
+}
+.fa-at {
+	font-size: 65px;
+	color: #fff;
+}
+.fas.fa-map-marker-alt {
+	font-size: 65px;
+	color: #fff;
 }
 
 .fa-share {
@@ -119,6 +129,7 @@ nav ul {
 	align-items: center;
 	justify-content: center;
 	margin-top: 15px;
+	font-family: 'Righteous', cursive;
 }
 
 nav li {
@@ -441,14 +452,12 @@ footer #messages {
 
 .btn-white::after {
 	background-color: #33aa09;
-
 }
 
 .btn:hover::after {
 	transform: scaleX(1.4) scaleY(1.6);
 	opacity: 0;
 }
-
 
 .btn:link,
 .btn:visited {
@@ -464,6 +473,7 @@ footer #messages {
 .btn:hover {
 	transform: translateY(-3px);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	color: #fff;
 }
 
 .btn:active {
@@ -647,7 +657,7 @@ footer .container-fluid {
 	}
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
 	footer .contact {
 		display: block;
 	}
@@ -679,7 +689,6 @@ footer .container-fluid {
 		display: block;
 		width: 100%;
 	}
-
 }
 
 @media screen and (max-width: 650px) {
@@ -794,7 +803,6 @@ footer .container-fluid {
 		left: 40%;
 		position: relative;
 	}
-
 
 	main .bio-texts {
 		display: block;
