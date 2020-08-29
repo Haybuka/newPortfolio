@@ -151,3 +151,11 @@ tll.from(totalGrid, {
 // 	transformOrigin: 'right center',
 // 	force3D: true
 // });
+
+let swatches = document.querySelector('.swatches input');
+let page = document.querySelector('html');
+swatches.addEventListener('change', function () {
+	page.style
+		.setProperty('--primary-color', this.value);
+})
+console.log('You ntie, Be looking for what is not lost...Lol')
