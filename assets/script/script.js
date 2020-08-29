@@ -163,5 +163,5 @@ window.addEventListener('load', (event) => {
 			page.style.setProperty('--primary-color', this.value);
 		});
 		console.log('You ntie, Be looking for what is not lost...Lol');
-	}, 3000);
+	}, 2000);
 });
