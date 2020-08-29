@@ -44,7 +44,8 @@ body {
 	margin: 0;
 	padding: 0;
 	color: var(--primary-color);
-	font-family: 'Lobster', cursive;
+	/* font-family: 'Lobster', cursive; */
+	font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -172,7 +173,7 @@ nav ul {
 	align-items: center;
 	justify-content: center;
 	margin-top: 15px;
-	font-family: 'Righteous', cursive;
+	/* font-family: 'Righteous', cursive; */
 }
 
 nav li {
