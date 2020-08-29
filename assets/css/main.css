@@ -3,7 +3,8 @@
 }
 
 :root {
-	--primary-color: rgb(38, 43, 72);
+	/* --primary-color: rgb(38, 43, 72); */
+	--primary-color: rgb(42, 185, 221);
 }
 
 .swatches {
