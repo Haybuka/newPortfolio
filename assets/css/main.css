@@ -3,7 +3,26 @@
 }
 
 :root {
-	--primary-color: rgb(38, 43, 72) !important;
+	--primary-color: rgb(38, 43, 72);
+}
+
+.swatches {
+	position: fixed;
+	top: 20%;
+	left: 3%;
+	width: 3%;
+	border-radius: 100%;
+}
+
+.text-color {
+	color: var(--primary-color);
+}
+
+.swatches input {
+	width: 100%;
+	border-radius: 100%;
+	border: none;
+	background-color: transparent;
 }
 
 body {
@@ -14,6 +33,7 @@ body {
 }
 
 html {
+	--primary-color: rgb(38, 43, 72);
 	scroll-behavior: smooth;
 }
 

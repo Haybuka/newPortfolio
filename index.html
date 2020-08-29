@@ -25,9 +25,11 @@
 </head>
 
 <body>
-    <div class="overlay first"></div>
-    <div class="overlay second"></div>
-    <div class="overlay third"></div>
+   <div class="swatches">
+    <div class="overlay swatch--var">
+         <input type="color" name="" id="">
+    </div>
+   </div>
 
     <div id="wrapper">
         <header>
@@ -85,9 +87,9 @@
                     </div>
                     <div class="col-lg-6 col-xl-6 col-md-12 bio-text">
                         <div class="card-body">
-                            <h5 class="card-title text-dark">HI There <i class="fas fa-hand-peace"></i></h5>
+                            <h5 class="card-title text-color">HI There <i class="fas fa-hand-peace"></i></h5>
 
-                            <div class="card-text text-dark">
+                            <div class="card-text text-color">
                                 <p>My name is Ndulue Chukwuebuka Paschal. I'm a Frontend Developer,a Student of Ladoke
                                     Akintola
                                     University,Ogbomoso,Oyo State.
@@ -269,16 +271,10 @@
                     </aside>
                 </section>
                 <section class="form-field pb-5">
-                    <!-- <h3 class="text-center text-light my-4">Or Leave a Message</h3> -->
+            
                     <form action="#">
 
-                        <!-- <div class="fields">
-                            <input type="text" id="name" name="fname" placeholder="Name" required><br>
-                            <input type="email" id="email" name="email" placeholder="Email" required><br>
-                        </div>
-                        <textarea name="messages" id="messages" cols="30" rows="1" placeholder="message"
-                            class="my-4"></textarea> -->
-                        <!-- <input type="submit" value="Download Resume" id="submit" class="my-3 btn btn-white"> -->
+                       
                         <a href="https://drive.google.com/file/d/1TPz_2kAe5Su0DiFgzjtHZsDrPnTMT3xs/view" class="btn btn-white btn-animated">Download Resume</a>
 
                     </form>
@@ -287,6 +283,14 @@
             </article>
         </footer>
     </div>
+    <script>
+       let swatches = document.querySelector('.swatches input');
+       let page = document.querySelector('html');  
+    swatches.addEventListener('change',function() {
+        page.style
+    .setProperty('--primary-color', this.value);
+    })
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
