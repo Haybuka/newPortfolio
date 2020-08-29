@@ -129,6 +129,12 @@ nav .nav-links img {
 	margin: 10px auto;
 }
 
+.text-white {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px var(--primary-color);
+}
+
 nav a {
 	text-decoration: none;
 	color: #000;
