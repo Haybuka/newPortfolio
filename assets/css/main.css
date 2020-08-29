@@ -10,18 +10,32 @@
 	position: fixed;
 	top: 20%;
 	left: 3%;
-	width: 35px;
+	width: 50px;
 	height: 30px;
 	border-radius: 100%;
+	z-index: 10;
 }
 
 .text-color {
 	color: var(--primary-color) !important;
 }
 
+.overlay {
+	position: relative;
+}
+
+.overlay i {
+	position: absolute;
+	top: -8px;
+	left: 5px;
+}
+
 .swatches input {
+	clip-path: circle(28.27% at 50% 49.7%);
 	width: 100%;
 	border-radius: 100%;
+	padding: 0;
+	margin: 0;
 	border: none;
 	background-color: transparent;
 }
