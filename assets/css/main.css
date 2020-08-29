@@ -4,7 +4,7 @@
 
 :root {
 	/* --primary-color: rgb(38, 43, 72); */
-	--primary-color: rgb(42, 185, 221);
+	--primary-color: rgb(8, 8, 8);
 }
 
 .swatches {
@@ -58,6 +58,10 @@ html {
 	width: 1440px;
 	max-width: 100%;
 	overflow-x: hidden;
+	display: none;
+}
+#wrapper.load {
+	display: block;
 }
 
 header {
@@ -409,9 +413,20 @@ main .gallery {
 a.green-color {
 	color: var(--primary-color);
 }
-
+.swatches + img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .2s;
+}
+.swatches + img.loader-off {
+	display: none;
+}
 footer {
 	background-color: var(--primary-color);
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 footer .contact {
