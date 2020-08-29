@@ -16,7 +16,7 @@
 }
 
 .text-color {
-	color: var(--primary-color);
+	color: var(--primary-color) !important;
 }
 
 .swatches input {
