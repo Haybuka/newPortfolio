@@ -2,12 +2,14 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--primary-color: rgb(38, 43, 72) !important;
+}
+
 body {
-	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
-	color: #343a40;
-	background-color: #fff !important;
+	color: var(--primary-color);
 	font-family: 'Lobster', cursive;
 }
 
@@ -20,24 +22,30 @@ html {
 	max-width: 100%;
 	overflow-x: hidden;
 }
-.bio-text {
-}
+
 header {
 	margin: 0;
 	padding: 0;
 	/* clip-path: polygon(0 0, 100% 0, 100% 70vh, 100% 70vh, 0 100%); */
 }
+
 .fa-at {
 	font-size: 65px;
 	color: #fff;
 }
+
 .fas.fa-map-marker-alt {
 	font-size: 65px;
 	color: #fff;
 }
 
+.fa-mobile-alt {
+	font-size: 65px;
+	color: #fff;
+}
+
 .fa-share {
-	color: #33aa09;
+	color: var(--primary-color) !important;
 }
 
 nav {
@@ -80,7 +88,7 @@ nav .nav-links img {
 }
 
 .logo h3 {
-	color: #33aa09;
+	color: var(--primary-color) !important;
 	margin: 10px auto;
 }
 
@@ -104,7 +112,7 @@ nav .nav-elements ul li a:after {
 	content: '';
 	width: 0;
 	height: 0.2em;
-	background-color: #33aa09;
+	background-color: var(--primary-color);
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -116,7 +124,7 @@ nav .nav-elements ul li a:hover:after {
 }
 
 nav a.current {
-	color: #33aa09;
+	color: var(--primary-color);
 }
 
 #contact {
@@ -157,22 +165,16 @@ nav .harmburger {
 
 header .hero {
 	height: 600px;
-
-	/* background: url('https://images.unsplash.com/photo-1516828848398-e04c82e9205a?ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80'); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
-	background: rgba(0, 0, 0, 0.808);
+	background-color: var(--primary-color);
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
 }
 
-#home {
-	margin-top: 10%;
-}
-
-.hero .welcome {
+.welcome {
 	/* font-family: Gotham Pro; */
 	font-style: normal;
 	font-weight: bold;
@@ -180,11 +182,13 @@ header .hero {
 	line-height: 78px;
 	color: #fff;
 	margin: 30px;
+	margin-top: 70px;
 	text-align: center;
 }
 
 .gringo {
-	color: #33aa09;
+	color: var(--primary-color);
+	text-shadow: 0 2px 1px rgba(255, 255, 255, 0.74);
 }
 
 .hero .digital {
@@ -216,7 +220,6 @@ main .card {
 }
 
 main .bio-text {
-	/* background-color: #33aa09; */
 	display: flex;
 	align-items: center;
 }
@@ -254,7 +257,8 @@ main .gallery {
 
 .gallery img:hover {
 	transform: translate(5px, -5px);
-	box-shadow: 0 3px 5px rgba(26, 24, 24, 0.479);
+	box-shadow: 0 3px 5px var(--primary-color);
+	border-radius: 10px;
 }
 
 .gallery .gal-one {
@@ -332,7 +336,7 @@ main .gallery {
 	height: 300px;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	background-color: #33aa09;
+	background-color: var(--primary-color);
 	display: grid;
 	text-align: left;
 	grid-template-columns: repeat(12, 1fr);
@@ -360,12 +364,11 @@ main .gallery {
 }
 
 a.green-color {
-	color: #33aa09;
+	color: var(--primary-color);
 }
 
 footer {
-	/* font-family: Gotham Pro; */
-	background-color: #222325;
+	background-color: var(--primary-color);
 }
 
 footer .contact {
@@ -451,7 +454,7 @@ footer #messages {
 }
 
 .btn-white::after {
-	background-color: #33aa09;
+	background-color: #fff;
 }
 
 .btn:hover::after {
@@ -473,7 +476,8 @@ footer #messages {
 .btn:hover {
 	transform: translateY(-3px);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-	color: #fff;
+	color: var(--primary-color);
+	background-color: #fff;
 }
 
 .btn:active {
@@ -481,24 +485,11 @@ footer #messages {
 }
 
 .btn-white {
-	background-color: #33aa09;
-	color: #fff;
+	background-color: #fff;
+	color: var(--primary-color);
 	padding: 10px 25px;
 	border-radius: 10px;
 }
-
-/* footer #submit {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;
-	border-radius: 10px;
-	color: #fff;
-	background-color: #33aa09;
-	border: none;
-	padding: 10px 25px;
-	margin-top: 3%;
-} */
 
 footer .container-fluid {
 	padding-right: 35px !important;
@@ -574,7 +565,7 @@ footer .container-fluid {
 		height: 3px;
 		margin-left: 10px;
 		margin-top: 3px;
-		background-color: #33aa09;
+		background-color: var(--primary-color);
 		transition: all 0.5s;
 		border-radius: 10px;
 		transform-origin: 50% 50%;
@@ -694,7 +685,7 @@ footer .container-fluid {
 @media screen and (max-width: 650px) {
 	.details {
 		height: auto;
-		background-color: #33aa09;
+		background-color: var(--primary-color);
 		display: block;
 		padding: 2em !important;
 	}
@@ -782,7 +773,7 @@ footer .container-fluid {
 	}
 
 	#gringo {
-		color: #33aa09;
+		color: var(--primary-color);
 	}
 
 	.hero .digital {
@@ -845,7 +836,6 @@ footer .container-fluid {
 	}
 
 	#onSmall .secondAside {
-		/* background-color: #33aa09; */
 		margin: 0 auto;
 		padding: 0;
 		text-align: left;
